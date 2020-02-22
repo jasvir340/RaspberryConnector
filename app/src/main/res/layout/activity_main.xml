@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Raspberry Pi Controller"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:textSize="32sp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/title"
+        android:id="@+id/lights"
+        android:text="lights"
+        android:background="#F14040"
+        android:textSize="26sp"
+        android:layout_marginBottom="150dp"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/lights"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:text="fan"
+        android:textSize="26sp"
+        android:background="#F14040"
+        android:id="@+id/fan"
+        />
+
+    <Button
+        android:id="@+id/ac"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="225dp"
+        android:background="#F14040"
+        android:text="ac"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/fridge"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="225dp"
+        android:layout_toRightOf="@+id/ac"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="25dp"
+        android:background="#F14040"
+        android:text="fridge"
+        android:textSize="26sp" />
+</RelativeLayout>
